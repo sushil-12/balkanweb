@@ -11,6 +11,27 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" href="/style.css?ver=1.2" />
                 <title>Balkan: Network for Digital Nomads</title>
+                <>
+                    {/* HTML Meta Tags */}
+                    <meta name="description" content="" />
+                    {/* Facebook Meta Tags */}
+                    <meta property="og:url" content="https://balkan.org/" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content="Balkan: Network for Digital Nomads" />
+                    <meta property="og:description" content="Balkan.org is a network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together." />
+                    <meta property="og:image" content="https://balkan.org/assets/logo.svg" />
+                    <meta property="og:image:alt" content="Balkan.org official logo" />
+
+                    {/* Twitter Meta Tags */}
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta property="twitter:domain" content="balkanweb.pages.dev" />
+                    <meta property="twitter:url" content="https://balkanweb.pages.dev/" />
+                    <meta name="twitter:title" content="Balkan: Network for Digital Nomads" />
+                    <meta name="twitter:description" content="Balkan.org is a network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together." />
+                    <meta name="twitter:image" content="https://balkan.org/assets/logo.svg" />
+
+                    {/* Meta Tags Generated via https://www.opengraph.xyz */}
+                </>
 
                 {/* Google Tag Manager */}
                 <script
@@ -36,26 +57,6 @@ const Home = () => {
                     content="Balkan, digital nomads, freelancers, business network, collaboration, creativity"
                 />
 
-                {/* Open Graph Tags */}
-                <meta property="og:title" content="Balkan: Network for Digital Nomads" />
-                <meta
-                    property="og:description"
-                    content="Balkan.org is a network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together."
-                />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://balkan.org/" />
-                <meta property="og:image" content="https://balkan.org/assets/logo.svg" />
-                <meta property="og:image:alt" content="Balkan.org official logo" />
-
-                {/* Twitter Cards */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Balkan: Network for Digital Nomads" />
-                <meta
-                    name="twitter:description"
-                    content="Balkan.org is a network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together."
-                />
-                <meta name="twitter:image" content="https://balkan.org/assets/logo.svg" />
-                <meta name="twitter:image:alt" content="Balkan.org official logo" />
 
                 <link rel="preload" href="assets/logo.svg" as="image" />
                 <link rel="canonical" href="https://balkan.org/" />

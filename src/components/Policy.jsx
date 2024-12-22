@@ -7,6 +7,18 @@ const Policy = () => {
         <>
             <Helmet>
                 <meta charSet="UTF-8" />
+                 {/* Open Graph Tags */}
+                 <meta property="og:type" content="website" />
+                <meta property="og:title" content="Balkan: Disclaimer and Disclosure" />
+                <meta
+                    property="og:description"
+                    content="Policy page for Balkan.org, outlining disclaimer, privacy practices, data usage, and third-party tool policies."
+                />
+                <meta property="og:url" content="https://balkan.org/policy/" />
+                <meta property="og:image" content="https://balkan.org/assets/logo.svg" />
+                <meta property="og:image:alt" content="Balkan.org official logo" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:site_name" content="Balkan" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" href="../style.css?ver=1.2" />
                 <title>Balkan: Disclaimer and Disclosure</title>
@@ -20,18 +32,7 @@ const Policy = () => {
                 />
                 <link rel="canonical" href="https://balkan.org/policy/" />
 
-                {/* Open Graph Tags */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Balkan: Disclaimer and Disclosure" />
-                <meta
-                    property="og:description"
-                    content="Policy page for Balkan.org, outlining disclaimer, privacy practices, data usage, and third-party tool policies."
-                />
-                <meta property="og:url" content="https://balkan.org/policy/" />
-                <meta property="og:image" content="https://balkan.org/assets/logo.svg" />
-                <meta property="og:image:alt" content="Balkan.org official logo" />
-                <meta property="og:locale" content="en_US" />
-                <meta property="og:site_name" content="Balkan" />
+               
 
                 {/* Favicon */}
                 <link
