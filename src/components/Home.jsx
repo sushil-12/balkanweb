@@ -1,5 +1,6 @@
 import React from "react";
-import logo  from "../assets/logo.svg";
+import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" href="/style.css?ver=1.2" />
                 <title>Balkan: Network for Digital Nomads</title>
+
                 {/* Google Tag Manager */}
                 <script
                     defer
@@ -17,13 +19,13 @@ const Home = () => {
                 ></script>
                 <script>
                     {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-Y9DJVCMWQN');
-          `}
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag() {
+                          dataLayer.push(arguments);
+                        }
+                        gtag('js', new Date());
+                        gtag('config', 'G-Y9DJVCMWQN');
+                    `}
                 </script>
                 <meta
                     name="description"
@@ -33,6 +35,28 @@ const Home = () => {
                     name="keywords"
                     content="Balkan, digital nomads, freelancers, business network, collaboration, creativity"
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Balkan: Network for Digital Nomads" />
+                <meta
+                    property="og:description"
+                    content="Balkan.org is a network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://balkan.org/" />
+                <meta property="og:image" content="https://balkan.org/assets/logo.svg" />
+                <meta property="og:image:alt" content="Balkan.org official logo" />
+
+                {/* Twitter Cards */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Balkan: Network for Digital Nomads" />
+                <meta
+                    name="twitter:description"
+                    content="Balkan.org is a network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together."
+                />
+                <meta name="twitter:image" content="https://balkan.org/assets/logo.svg" />
+                <meta name="twitter:image:alt" content="Balkan.org official logo" />
+
                 <link rel="preload" href="assets/logo.svg" as="image" />
                 <link rel="canonical" href="https://balkan.org/" />
 
@@ -73,27 +97,27 @@ const Home = () => {
                 {/* JSON-LD */}
                 <script type="application/ld+json">
                     {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Balkan",
-              "url": "https://balkan.org",
-              "logo": "https://balkan.org/assets/logo.svg",
-              "foundingDate": "2024",
-              "founder": {
-                "@type": "Person",
-                "name": "Bruno Bruno",
-                "alternateName": "The Logician",
-                "url": "https://thelogician.com",
-                "sameAs": [
-                  "https://www.linkedin.com/",
-                  "https://www.crunchbase.com/",
-                  "https://x.com/"
-                ]
-              },
-              "description": "Network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together."
-            }
-          `}
+                        {
+                          "@context": "https://schema.org",
+                          "@type": "Organization",
+                          "name": "Balkan",
+                          "url": "https://balkan.org",
+                          "logo": "https://balkan.org/assets/logo.svg",
+                          "foundingDate": "2024",
+                          "founder": {
+                            "@type": "Person",
+                            "name": "Bruno Bruno",
+                            "alternateName": "The Logician",
+                            "url": "https://thelogician.com",
+                            "sameAs": [
+                              "https://www.linkedin.com/",
+                              "https://www.crunchbase.com/",
+                              "https://x.com/"
+                            ]
+                          },
+                          "description": "Network for digital nomads, freelancers, and business owners, where progress, creativity, and collaboration come together."
+                        }
+                    `}
                 </script>
             </head>
             <main className="container">
@@ -134,7 +158,7 @@ const Home = () => {
                     </p>
                 </div>
                 <footer>
-                    <a href="/policy">Disclaimer and Disclosure</a>
+                    <Link to="/policy">Disclaimer and Disclosure</Link>
                 </footer>
             </main>
         </>
