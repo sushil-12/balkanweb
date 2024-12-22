@@ -9,7 +9,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/policy" element={<Policy />} />
-          {/* Redirect all other routes to the home page */}
+          {/* Client-side fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
