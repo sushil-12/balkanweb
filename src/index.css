@@ -1,0 +1,122 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* Heading style */
+.heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0000FF;
+}
+
+.text-right {
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.65rem;
+}
+
+.logo-text {
+    display: flex;
+    align-items: end;
+    gap: 4px;
+}
+
+/* Paragraph style */
+.text-balkan {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #000000;
+    margin: 20px 0;
+}
+
+/* List styling */
+.container ul {
+    padding: 0;
+    margin: 16px auto;
+    max-width: 800px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    /* flex-wrap: wrap; Allows items to wrap to the next line */
+}
+
+.container ul li {
+    flex: 1 1 45%; /* Allows two items per row in small screens */
+    text-align: center; /* Centers text within each list item */
+    margin: 8px 0;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .container ul li {
+        flex: 1 1 45%; /* Two items per row on smaller screens */
+    }
+	.container ul {
+		flex-wrap: wrap;
+	}
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .text-balkan,
+    .container ol {
+        font-size: 0.9rem;
+    }
+
+    /* Align text left on mobile */
+    .heading, .text-balkan, .container ol {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    html{
+        display: block;
+        height: auto;
+        align-items: flex-start;
+    }
+    .heading {
+        font-size: 1.85rem;
+    }
+
+    .text-balkan,
+    .container ol {
+        font-size: 14px;
+    }
+    
+    /* Align text left on smaller screens */
+    .heading, .text-balkan, .container ol {
+        text-align: left;
+    }
+}
